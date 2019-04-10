@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>CS594 - HW02</title>
+<meta charset="UTF-8">
+<!--<script src="_/d3.min.js"></script>-->
+<!--<script src="//d3js.org/d3.v3.min.js"></script>-->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="data/css/style.css">
+<body>
+<header>
+    <h1 align="center"> Gun Deaths in the United States </h1>
+</header>
+<div class="infoText"><p align="center">Map of the US showing death toll by State and City.<br>
+    Clicking the state on the map shows additional information and visualization. You can even edit that information and save it to reflect the changes.<br>
+    Hovering over cities shows M/F kills, and clicking a city loads another visualization. </p></div>
+    <script src="data/js/script.js" type="text/javascript"></script>
+    <div id="main" style="height: 1050px">
+        <div class="details">
+            <h1 class="country" align="center"></h1>
+            <br><br><br>
+            <div >Death Toll:&nbsp;<p class="analysis"style="display:inline" id="deathCount"class="deaths"></p></div><br>
+            <div>Male Victims:&nbsp;<input type="number" id="txtMale" class="males myTextBox" maxlength="4" size="4" disabled="disabled">&nbsp;<a href="#" id="btnMale" role="button">Edit</a></div><br>
+            <div>Female Victims:&nbsp;<input type="number" id="txtFemale" class="females myTextBox" maxlength="4" size="4" disabled="disabled">&nbsp;<a href="#" id="btnFemale" role="button">Edit</a></div><br>
+            <div>Mean Age of Victims:&nbsp;<p class="analysis"style="display:inline" id="meanAge"></p></div><br>
+            <div>Cities Encompassed:&nbsp;<p class="analysis"style="display:inline" id="cityCount"></p></div><br>
+            <div>Most Notorious City:&nbsp;<p class="analysis"style="display:inline" id="maxNotoriety"></p></div><br>
+            <div>Least Notorious City:&nbsp;<p class="analysis"style="display:inline" id="minNotoriety"></p></div><br>
+        </div>
+    </div>
+<footer>
+    <p> © 2018 CS-594 </p>
+</footer>
+<!--d3.select("body")-->
+<!--.append("div")-->
+<!--.attr("class","footer")-->
+<!--.text("© 2018 CS-594");-->
+    <!--<script src="_/d3.min.js"></script>-->
+    <!--<script src="_/topojson.min.js"></  script>-->
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <!--<script src="https://d3js.org/topojson.v2.min.js"></script>-->
+    <!--<script src="data/js/script.js" type="text/javascript"></script>-->
+</body>
+</html>
+
